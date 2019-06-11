@@ -1,3 +1,4 @@
+import hparam
 import tensorflow as tf
 from text import symbols
 
@@ -5,7 +6,7 @@ from text import symbols
 def create_hparams(hparams_string=None, verbose=False):
     """Create model hyperparameters. Parse nondefault from given string."""
 
-    hparams = tf.contrib.training.HParams(
+    hparams = hparam.HParams(
         ################################
         # Experiment Parameters        #
         ################################
